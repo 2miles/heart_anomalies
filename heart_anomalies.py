@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--custom_split",
         type=float,
         default=None,
-        help="Use a custom split and give percentage of data to be included in test set. Integer: [0,100]",
+        help="Use a custom split and give percentage of data to be included in test set. Integer: (0,1)",
     )
     parser.add_argument(
         "--seed",
@@ -55,9 +55,8 @@ if __name__ == "__main__":
     features = [row[1:] for row in data]
     labels = [row[0] for row in data]
 
-    # Split the data into training and testing sets
+    # Split the data into training sets and testing sets
     # test_size: The proportion of the dataset to include in the test split.
-    # 0.2 means 20% of the data will be used for training; 80$ for testing
     features_train, features_test, labels_train, labels_test = train_test_split(
         features, labels, test_size=CUSTOM_SPLIT, random_state=SEED
     )
