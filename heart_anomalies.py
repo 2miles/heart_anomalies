@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--cross_val",
         type=int,
-        default=5,
+        default=10,
         help="Number of subsets into which the data is divided for cross validation",
     )
 

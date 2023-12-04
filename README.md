@@ -29,6 +29,21 @@ To run the program with all the default parameters:
 python3 heart_anomalies.py
 ```
 
+```
+Subset: 1,  Accuracy: 70.37%
+Subset: 2,  Accuracy: 74.07%
+Subset: 3,  Accuracy: 92.59%
+Subset: 4,  Accuracy: 81.48%
+Subset: 5,  Accuracy: 81.48%
+Subset: 6,  Accuracy: 77.78%
+Subset: 7,  Accuracy: 74.07%
+Subset: 8,  Accuracy: 88.46%
+Subset: 9,  Accuracy: 73.08%
+Subset: 10,  Accuracy: 84.62%
+
+Average Accuracy: 79.80%
+```
+
 ### Arguments:
 
 #### `--custom_split [float]`
