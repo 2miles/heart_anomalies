@@ -44,7 +44,6 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    CUSTOM_SPLIT = args.custom_split
     SEED = args.seed
     CROSS_VAL = args.cross_val
     CUSTOM_SPLIT = args.custom_split
